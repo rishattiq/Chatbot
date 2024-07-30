@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="col-md-12 text-center">
+      <h1>AI CHATBOT</h1>
+      <ng-container *ngFor="let message of messages">
+        <div class="message" [ngClass]="{'from': message.author === 'bot', 'to': message.author === 'user'}">
+          {{ message.content }}
+        </div>
+      </ng-container>
+    </div>
+  </div>
+  
+  <div class="col-md-12 text-center">
+    <div>
+      <label *ngIf="messages.length == 0; else dialogInfo" for="nameField" class="text-center">Your message</label>
+    </div>
+    <input [(ngModel)]="value" (keyup.enter)="sendMessage()" type="text">
+    <button class="btn btn-primary" (click)="sendMessage()">Ask Me</button>
+    <ng-template #dialogInfo>
+      <span>Total messages: {{ messages.length }}</span>
+    </ng-template>
+  </div>
+  
