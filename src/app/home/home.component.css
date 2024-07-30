@@ -1,0 +1,168 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #8f8e8e, #959595); /* Changed to a warm gradient */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  header {
+    width: 100%;
+    background: #333;
+    color: white;
+    padding: 10px 0;
+  }
+  
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .nav-bar .logo h1 {
+    margin: 0;
+  }
+  
+  .nav-bar nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-bar nav ul li {
+    margin-left: 20px;
+  }
+  
+  .nav-bar nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .nav-bar nav ul li button {
+    margin-left: 10px;
+  }
+  
+  main {
+    flex: 1;
+  }
+  
+  section {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .welcome-section {
+    background: #cccccc; /* Bright yellow background */
+  }
+  
+  .about-section {
+    background: #747574; /* Light green background */
+  }
+  
+  .features-section {
+    background: #cccccc; /* Light blue background */
+  }
+  
+  .features-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .features-section li {
+    background: #cccccc;
+    color: rgb(11, 10, 10);
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .features-section li:hover {
+    transform: scale(1.05);
+  }
+  
+  .testimonials-section {
+    background:  #747574;
+  }
+  
+  .contact-section {
+    background: #ffccbc;
+  }
+  
+  .contact-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact-section input, .contact-section textarea {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #333;
+    color: white;
+    border-top: 1px solid #e7e7e7;
+  }
+  
+  .btn-primary, .btn-secondary {
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px;
+    margin: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .btn-primary {
+    background-color: #ff5722; /* Deep orange background */
+  }
+  
+  .btn-secondary {
+    background-color: #009688; /* Teal background */
+  }
+  
+  .btn-primary:hover, .btn-secondary:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 768px) {
+    .nav-bar {
+      flex-direction: column;
+    }
+  
+    .nav-bar nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav-bar nav ul li {
+      margin: 10px 0;
+    }
+  
+    .btn-primary, .btn-secondary {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  }
+  
